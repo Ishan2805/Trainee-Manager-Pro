@@ -14,7 +14,9 @@
 
 ---
 
-<img src="icon.png" width="250" />
+<div align="center">
+    <img src="icon.png" width="150" />
+</div>
 
 ## 🚀 Overview
 
