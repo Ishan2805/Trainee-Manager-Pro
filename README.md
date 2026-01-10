@@ -14,6 +14,8 @@
 
 ---
 
+<img src="icon.png" width="250" />
+
 ## 🚀 Overview
 
 **Trainee Manager Pro** is a specialized tool designed to eliminate paperwork and streamline administrative tasks for instructors. It allows for the secure management of student data directly on an Android device, offering a seamless experience even without an active internet connection (some export features may utilize connectivity).
