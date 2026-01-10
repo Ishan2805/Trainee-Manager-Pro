@@ -14,10 +14,6 @@
 
 ---
 
-<div align="center">
-    <img src="icon.png" width="150" />
-</div>
-
 ## 🚀 Overview
 
 **Trainee Manager Pro** is a specialized tool designed to eliminate paperwork and streamline administrative tasks for instructors. It allows for the secure management of student data directly on an Android device, offering a seamless experience even without an active internet connection (some export features may utilize connectivity).
@@ -41,11 +37,11 @@ Designed with efficiency in mind, it simplifies complex data entry, validation, 
 
 | **Dashboard & List** | **Batch Reports** | **Data Management** |
 |:---:|:---:|:---:|
-| <img src="screenshots/Screenshot_20260110-212028.Trainee Manager Pro.png" width="250" /> | <img src="screenshots/Screenshot_20260110-211201.Trainee Manager Pro.png" width="250" /> | <img src="screenshots/Screenshot_20260110-211205.Trainee Manager Pro.png" width="250" /> |
+| <img src="screenshots/Screenshot_20260110-212028.Trainee Manager Pro.png" width="200" /> | <img src="screenshots/Screenshot_20260110-211201.Trainee Manager Pro.png" width="200" /> | <img src="screenshots/Screenshot_20260110-211205.Trainee Manager Pro.png" width="200" /> |
 
-| **Detailed Reporting** | **Empty State** |
-|:---:|:---:|
-| <img src="screenshots/Screenshot_20260110-212147.Trainee Manager Pro.png" width="250" /> | <img src="screenshots/Screenshot_20260110-211142.Trainee Manager Pro.png" width="250" /> |
+| **Detailed Reporting** | **About & Stats** | **Empty State** |
+|:---:|:---:|:---:|
+| <img src="screenshots/Screenshot_20260110-212147.Trainee Manager Pro.png" width="200" /> | <img src="screenshots/Screenshot_20260110-211222.Trainee Manager Pro.jpg" width="200" /> | <img src="screenshots/Screenshot_20260110-211142.Trainee Manager Pro.png" width="200" /> |
 
 </div>
 
@@ -53,7 +49,7 @@ Designed with efficiency in mind, it simplifies complex data entry, validation, 
 
 ## 📥 How to Install
 
-1.  **Download:** Click the [Download Button](https://github.com/keshavshiyal/Trainee-Manager-Pro/releases/latest) to get the latest `.apk` file.
+1.  **Download:** Click the [**Download Button**](https://github.com/keshavshiyal/Trainee-Manager-Pro/releases/latest) to get the latest `.apk` file.
 2.  **Open:** Locate the file in your downloads folder.
 3.  **Permission:** If prompted, allow installation from **"Unknown Sources"** (required for side-loaded apps).
 4.  **Launch:** Open the app and start managing your data!
@@ -83,7 +79,7 @@ By using this application, you agree that you are solely responsible for the acc
 
 This application is distributed as **Freeware**. You are free to download and use the APK for personal, educational, or professional purposes.
 
-However, strict restrictions apply:
+**Strict Restrictions:**
 1.  **No Modification:** You may not decompile, reverse engineer, disassemble, or modify the APK file or any part of the software.
 2.  **No Redistribution:** You may not host or redistribute this application on other websites or platforms without explicit written permission.
 3.  **No Commercial Sale:** You may not sell, rent, or lease this application.
