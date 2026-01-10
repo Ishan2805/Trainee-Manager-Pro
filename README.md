@@ -6,7 +6,11 @@
 ![Status](https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge)
 ![Offline](https://img.shields.io/badge/Offline-First-orange?style=for-the-badge)
 
+<br>
+
 **A powerful, professional Android application for managing trainee records, generating government-compliant reports, and tracking batch statistics.**
+
+<br>
 
 [**⬇️ Download Latest APK**](https://github.com/keshavshiyal/Trainee-Manager-Pro/releases/latest)
 
@@ -16,33 +20,56 @@
 
 ## 🚀 Overview
 
-**Trainee Manager Pro** is a specialized tool designed to eliminate paperwork and streamline administrative tasks for instructors. It allows for the secure management of student data directly on an Android device, offering a seamless experience even without an active internet connection (some export features may utilize connectivity).
+**Trainee Manager Pro** is a specialized tool designed to eliminate paperwork and streamline administrative tasks for instructors. It allows for the secure management of student data directly on an Android device, offering a seamless experience even without an active internet connection.
 
 Designed with efficiency in mind, it simplifies complex data entry, validation, and reporting into a user-friendly mobile interface.
 
+<br>
+
 ## ✨ Key Features
 
-* **📱 100% Offline Database:** All sensitive data is stored locally on your device for maximum privacy and speed. No external servers are involved.
-* **📂 Smart Data Import:** Intelligent bulk import engine that automatically detects, cleans, and standardizes data formats from CSV files.
-* **📊 One-Click Reporting:** Instantly generate official **On-Roll**, **Termination**, and **Scholarship** reports formatted for government compliance.
-* **🖨️ Universal Export:** Export comprehensive 30-column datasets to PDF (Landscape) or CSV formats for further use in office software.
-* **🛡️ Secure Backup System:** Built-in encrypted backup and restore functionality to safeguard your data against accidental loss.
-* **🔍 Instant Search:** Powerful filtering to locate any record by Name, Batch, or Enrollment ID in milliseconds.
+* **📱 100% Offline Database:** All sensitive data is stored locally on your device for maximum privacy and speed.
+* **📂 Smart Data Import:** Intelligent bulk import engine that automatically detects and standardizes CSV data.
+* **📊 One-Click Reporting:** Instantly generate official **On-Roll**, **Termination**, and **Scholarship** reports.
+* **🖨️ Universal Export:** Export comprehensive 30-column datasets to PDF (Landscape) or CSV formats.
+* **🛡️ Secure Backup:** Built-in encrypted backup and restore functionality (Android Scoped Storage compatible).
+* **🔍 Instant Search:** Powerful filtering to locate any record by Name, Batch, or Enrollment ID.
 
 ---
 
 ## 📸 App Screenshots
 
 <div align="center">
-
-| **Dashboard & List** | **Batch Reports** | **Data Management** |
-|:---:|:---:|:---:|
-| <img src="screenshots/Screenshot_20260110-212028.Trainee Manager Pro.png" width="200" /> | <img src="screenshots/Screenshot_20260110-211201.Trainee Manager Pro.png" width="200" /> | <img src="screenshots/Screenshot_20260110-211205.Trainee Manager Pro.png" width="200" /> |
-
-| **Detailed Reporting** | **About & Stats** | **Empty State** |
-|:---:|:---:|:---:|
-| <img src="screenshots/Screenshot_20260110-212147.Trainee Manager Pro.png" width="200" /> | <img src="screenshots/Screenshot_20260110-211222.Trainee Manager Pro.jpg" width="200" /> | <img src="screenshots/Screenshot_20260110-211142.Trainee Manager Pro.png" width="200" /> |
-
+  <table>
+    <tr>
+      <td align="center">
+        <b>Dashboard & List</b><br>
+        <img src="screenshots/Screenshot_20260110-212028.Trainee Manager Pro.png" width="220" />
+      </td>
+      <td align="center">
+        <b>Batch Reports</b><br>
+        <img src="screenshots/Screenshot_20260110-211201.Trainee Manager Pro.png" width="220" />
+      </td>
+      <td align="center">
+        <b>Data Management</b><br>
+        <img src="screenshots/Screenshot_20260110-211205.Trainee Manager Pro.png" width="220" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <b>Detailed Reporting</b><br>
+        <img src="screenshots/Screenshot_20260110-212147.Trainee Manager Pro.png" width="220" />
+      </td>
+      <td align="center">
+        <b>About & Stats</b><br>
+        <img src="screenshots/Screenshot_20260110-211222.Trainee Manager Pro.jpg" width="220" />
+      </td>
+      <td align="center">
+        <b>Empty State</b><br>
+        <img src="screenshots/Screenshot_20260110-211142.Trainee Manager Pro.png" width="220" />
+      </td>
+    </tr>
+  </table>
 </div>
 
 ---
@@ -89,6 +116,7 @@ This application is distributed as **Freeware**. You are free to download and us
 ## 👨‍💻 Developer
 
 **Keshav Shiyal**
+<br>
 *Developed with ❤️ in India.*
 
 [GitHub Profile](https://github.com/keshavshiyal)
