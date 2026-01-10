@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Trainee Manager Pro</title>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2563eb">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="bottom-nav">
+        <button onclick="showView('list')"><i class="ri-group-line"></i><span>List</span></button>
+        <button onclick="showView('reports')"><i class="ri-pie-chart-2-line"></i><span>Reports</span></button>
+        <button onclick="showView('data')"><i class="ri-database-2-line"></i><span>Data</span></button>
+        <button onclick="showView('about')"><i class="ri-information-line"></i><span>About</span></button>
+    </nav>
+
+    <main id="app">
+        <header>
+            <h2 id="view-title">Trainee List</h2>
+        </header>
+        <section id="content-area"></section>
+    </main>
+
+    <template id="view-list">
+        <div class="search-container">
+            <div class="search-wrapper">
+                <i class="ri-search-line search-icon-left"></i>
+                <input type="text" id="traineeSearch" class="search-input" placeholder="Search..." autocomplete="off"
+                    oninput="handleSearch(this)">
+                <button id="clearSearchBtn" class="search-clear-btn" onclick="clearSearch()">
+                    <i class="ri-close-fill"></i>
+                </button>
+            </div>
+        </div>
+        <div id="list-container"></div>
+        <button class="fab-btn" onclick="openAddModal()"><i class="ri-add-line"></i></button>
+    </template>
+
+    <template id="view-data">
+        <div class="data-container">
+
+            <div class="data-section-title">Full Backup & Restore</div>
+
+            <div class="import-card backup-card">
+                <div class="icon-box-left bg-blue">
+                    <i class="ri-save-3-line"></i>
+                </div>
+                <div class="card-text">
+                    <h3>Backup Data</h3>
+                    <p>Save a full snapshot of your database (including photos) to your device.</p>
+                    <button class="btn-sm btn-outline" onclick="performBackup()">
+                        <i class="ri-download-2-line"></i> Download Backup
+                    </button>
+                </div>
+            </div>
+
+            <div class="import-card restore-card">
+                <div class="icon-box-left bg-red">
+                    <i class="ri-restart-line"></i>
+                </div>
+                <div class="card-text">
+                    <h3>Restore Backup</h3>
+                    <p><strong>Warning:</strong> This will replace all current data with the backup file.</p>
+
+                    <input type="file" id="backupInput" accept=".json" style="display:none"
+                        onchange="previewRestoreFile(this)">
+
+                    <button class="btn-sm btn-danger-outline" onclick="document.getElementById('backupInput').click()">
+                        <i class="ri-upload-2-line"></i> Select Backup File
+                    </button>
+                </div>
+            </div>
+
+            <div class="data-section-title" style="margin-top:30px;">Bulk Import (Append)</div>
+
+            <div class="import-card">
+                <div class="icon-box-left bg-green">
+                    <i class="ri-file-excel-2-line"></i>
+                </div>
+                <div class="card-text">
+                    <h3>CSV Import</h3>
+                    <p>Add new trainees from a CSV file (Appends to existing data).</p>
+
+                    <div class="btn-group">
+                        <button class="btn-text" onclick="downloadSampleCSV()">Get Template</button>
+                        <span class="divider">|</span>
+                        <button class="btn-text" onclick="document.getElementById('csvInput').click()">Upload
+                            CSV</button>
+                    </div>
+                    <input type="file" id="csvInput" accept=".csv, text/csv, application/vnd.ms-excel, text/plain"
+                        style="display:none" onchange="handleCSVSelect(this)">
+                </div>
+            </div>
+
+        </div>
+    </template>
+
+    <template id="view-reports">
+        <div style="padding: 15px; padding-bottom: 100px;">
+
+            <div class="report-controls">
+                <div>
+                    <div class="control-label">Select Batch</div>
+                    <select id="reportBatchSelect" class="form-control" style="margin:0;">
+                        <option value="">-- Select Batch --</option>
+                    </select>
+                </div>
+
+                <div class="control-label" style="margin-top:10px;">Generate Report</div>
+                <div class="report-type-grid">
+                    <button class="report-btn" onclick="generateReport('list')">
+                        <i class="ri-file-list-3-line"></i> On-Roll List
+                    </button>
+                    <button class="report-btn" onclick="generateReport('counts')">
+                        <i class="ri-pie-chart-2-line"></i> Counts
+                    </button>
+                    <button class="report-btn" onclick="generateReport('termination')">
+                        <i class="ri-user-unfollow-line"></i> Terminations
+                    </button>
+                    <button class="report-btn" onclick="generateReport('scholarship')">
+                        <i class="ri-graduation-cap-line"></i> Scholarship
+                    </button>
+                </div>
+            </div>
+
+            <div id="reportOutput" class="report-card hidden">
+            </div>
+
+            <div id="exportActions" class="export-actions hidden">
+                <button class="btn-sm btn-outline" onclick="exportToCSV()">
+                    <i class="ri-file-excel-2-line"></i> CSV
+                </button>
+                <button class="btn-sm btn-outline" onclick="exportToPDF()">
+                    <i class="ri-file-pdf-line"></i> PDF
+                </button>
+            </div>
+
+        </div>
+    </template>
+
+    <template id="view-about">
+        <div class="about-wrapper">
+
+            <div class="about-hero">
+                <div class="hero-content">
+                    <img src="assets/imgs/icon.png" class="hero-logo" alt="Logo">
+                    <div class="hero-text">
+                        <h2>Trainee Manager</h2>
+                        <span class="version-pill">Pro Edition v1.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-scroll-area">
+
+                <div id="storage-stats-area"></div>
+
+                <div class="info-card warning-card">
+                    <div class="card-header">
+                        <i class="ri-hard-drive-2-line"></i>
+                        <span>Data Safety Priority</span>
+                    </div>
+                    <p>
+                        <strong>Your data lives on this device.</strong> This app is 100% offline.
+                        If you clear your browser cache or uninstall the app,
+                        <span style="color:var(--danger); font-weight:700;">data will be lost.</span>
+                    </p>
+                    <div class="action-hint">
+                        <i class="ri-checkbox-circle-fill"></i>
+                        <span>Please perform a <b>Backup (JSON)</b> or <b>Export (CSV)</b> weekly to keep data
+                            safe.</span>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-header">
+                        <i class="ri-book-open-line"></i>
+                        <span>Quick Start Guide</span>
+                    </div>
+                    <div class="guide-steps">
+                        <div class="step">
+                            <div class="step-num">1</div>
+                            <div class="step-text">
+                                <strong>Import Data</strong>
+                                <p>Go to "Data" tab and upload your CSV. The app auto-fixes headers.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-num">2</div>
+                            <div class="step-text">
+                                <strong>Manage Trainees</strong>
+                                <p>Use the "List" tab to search, call, or edit student details.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-num">3</div>
+                            <div class="step-text">
+                                <strong>Generate Reports</strong>
+                                <p>Create PDF/CSV reports for specific batches instantly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="dev-flex">
+                        <div class="dev-avatar">KS</div>
+                        <div class="dev-meta">
+                            <span class="role">Design & Developed By</span>
+                            <h4 class="name">Keshav Shiyal</h4>
+                            <a href="https://github.com/keshavshiyal" target="_blank" class="github-link">
+                                @keshavshiyal <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-footer">
+                    <p>&copy; 2026 Trainee Manager Pro</p>
+                    <p class="love">Made with <i class="ri-heart-3-fill"></i> in India</p>
+                </div>
+
+                <div style="height: 100px;"></div>
+            </div>
+        </div>
+    </template>
+
+    <div id="detailDrawer" class="drawer hidden">
+        <div id="drawer-dynamic-content" class="drawer-content"></div>
+    </div>
+
+    <div id="addModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Trainee</h3>
+                <button onclick="closeAddModal()" class="close-btn"><i class="ri-close-line"></i></button>
+            </div>
+
+            <form id="traineeForm" class="modal-body">
+
+                <div class="photo-upload-container">
+                    <div class="photo-preview" id="photoPreview"
+                        onclick="document.getElementById('photoInput').click()">
+                        <i class="ri-camera-add-line" style="font-size: 32px; color: #94a3b8;"></i>
+                    </div>
+                    <input type="file" id="photoInput" accept="image/*" style="display: none;"
+                        onchange="handlePhotoSelect(this)">
+                    <input type="hidden" name="photo" id="photoBase64">
+                    <p class="photo-label">Tap to add photo</p>
+                </div>
+
+                <div class="form-section-title">Official Info</div>
+                <div class="form-row">
+                    <input type="text" name="Trainee Id" placeholder="Enrollment No *" required>
+                    <input type="text" name="Batch_No" placeholder="Batch (e.g. COPA-83-1) *" required>
+                </div>
+                <input type="text" name="Course Name" placeholder="Course Name">
+
+                <div class="form-row">
+                    <select name="Status">
+                        <option value="Active">Status: Active</option>
+                        <option value="Resigned">Status: Resigned</option>
+                        <option value="Termination">Status: Termination</option>
+                    </select>
+                    <input type="text" name="Status_Note" placeholder="Status Note / Reason">
+                </div>
+
+                <div class="form-section-title">Personal Details</div>
+                <div class="form-row">
+                    <input type="text" name="Trainee Name" placeholder="First Name *" required>
+                    <input type="text" name="Surname" placeholder="Surname *" required>
+                </div>
+                <input type="text" name="Father Name" placeholder="Father's Name">
+
+                <div class="form-row">
+                    <select name="Gender">
+                        <option value="">-- Gender --</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <input type="date" name="Birthdate" placeholder="Birthdate">
+                </div>
+
+                <div class="form-row">
+                    <select name="Caste">
+                        <option value="">-- Caste --</option>
+                        <option value="General">General</option>
+                        <option value="SEBC">SEBC</option>
+                        <option value="SC">SC</option>
+                        <option value="ST">ST</option>
+                        <option value="EWS">EWS</option>
+                    </select>
+                    <select name="Category">
+                        <option value="">-- Category --</option>
+                        <option value="None">None</option>
+                        <option value="Divyang">Divyang</option>
+                        <option value="Ex-Serviceman">Ex-Serviceman</option>
+                    </select>
+                </div>
+                <input type="text" name="Nationality" value="Indian" placeholder="Nationality">
+
+                <div class="form-section-title">Contact & Address</div>
+                <div class="form-row">
+                    <input type="tel" name="Contact_No" placeholder="Self Mobile" inputmode="numeric">
+                    <input type="tel" name="Father/Relative_Contact_No" placeholder="Parent Mobile" inputmode="numeric">
+                </div>
+                <input type="email" name="Email" placeholder="Email Address">
+
+                <textarea name="Village/Street" placeholder="Village / Street Address" rows="2"></textarea>
+
+                <div class="form-row">
+                    <input type="text" name="Taluka" placeholder="Taluka">
+                    <input type="text" name="District" placeholder="District">
+                </div>
+                <div class="form-row">
+                    <input type="text" name="State/UT" value="Gujarat" placeholder="State">
+                    <input type="tel" name="Pin" placeholder="Pin Code" inputmode="numeric">
+                </div>
+
+                <div class="form-section-title">Documents & Qualification</div>
+                <select name="Highest_Qualification">
+                    <option value="">-- Highest Qualification --</option>
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                    <option value="BA">BA</option>
+                    <option value="BCA">BCA</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="MA">MA</option>
+                    <option value="M.Com">M.Com</option>
+                    <option value="BBA">BBA</option>
+                    <option value="MBA">MBA</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <div class="form-row">
+                    <input type="text" name="Adhar_No" placeholder="Aadhar No" inputmode="numeric">
+                    <input type="text" name="Voter_Id" placeholder="Voter ID">
+                </div>
+                <div class="form-row">
+                    <input type="text" name="Ration_card_no" placeholder="Ration Card No">
+                    <input type="text" name="Ration_Card_type" placeholder="Card Type (APL/BPL)">
+                </div>
+
+                <div class="form-section-title">Scholarship Info</div>
+                <div class="form-row">
+                    <select name="Scholarship_recieved">
+                        <option value="No">Received: No</option>
+                        <option value="Yes">Received: Yes</option>
+                    </select>
+                    <input type="text" name="Scholarship_scheme" placeholder="Scheme Name">
+                </div>
+                <input type="text" name="Scholarship_App_No" placeholder="Application No">
+
+                <div class="form-section-title">Other</div>
+                <textarea name="Other_details_if_any" placeholder="Any other remarks..." rows="2"></textarea>
+
+                <div style="height: 30px;"></div>
+                <button type="submit" class="btn-primary">Save Trainee</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="customAlert" class="modal hidden">
+        <div class="modal-content alert-content">
+            <div id="alertIconBox" class="alert-icon-box"></div>
+            <h3 id="alertTitle">Title</h3>
+            <div id="alertMessage" class="alert-body">Message</div>
+
+            <div class="alert-actions">
+                <button id="alertCancelBtn" class="btn-secondary hidden" onclick="closeCustomAlert()">Cancel</button>
+                <button id="alertOkBtn" class="btn-primary" onclick="closeCustomAlert()">Okay</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
