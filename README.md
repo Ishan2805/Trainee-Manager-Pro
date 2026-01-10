@@ -61,8 +61,8 @@ Designed with efficiency in mind, it simplifies complex data entry, validation, 
         <img src="screenshots/Screenshot_20260110-212147.Trainee Manager Pro.png" width="220" />
       </td>
       <td align="center">
-        <b>About & Stats</b><br>
-        <img src="screenshots/Screenshot_20260110-211222.Trainee Manager Pro.jpg" width="220" />
+        <!-- <b>About & Stats</b><br>
+        <img src="screenshots/Screenshot_20260110-211222.Trainee Manager Pro.jpg" width="220" /> -->
       </td>
       <td align="center">
         <b>Empty State</b><br>
