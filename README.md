@@ -39,9 +39,9 @@ Designed with efficiency in mind, it simplifies complex data entry, validation, 
 |:---:|:---:|:---:|
 | <img src="screenshots/Screenshot_20260110-212028.Trainee Manager Pro.png" width="250" /> | <img src="screenshots/Screenshot_20260110-211201.Trainee Manager Pro.png" width="250" /> | <img src="screenshots/Screenshot_20260110-211205.Trainee Manager Pro.png" width="250" /> |
 
-| **Detailed Reporting** | **About & Stats** | **Empty State** |
+| **Detailed Reporting** | | **Empty State** |
 |:---:|:---:|:---:|
-| <img src="screenshots/Screenshot_20260110-212147.Trainee Manager Pro.png" width="250" /> | <img src="screenshots/Screenshot_20260110-211222.Trainee Manager Pro.jpg" width="250" /> | <img src="screenshots/Screenshot_20260110-211142.Trainee Manager Pro.png" width="250" /> |
+| <img src="screenshots/Screenshot_20260110-212147.Trainee Manager Pro.png" width="250" /> | | <img src="screenshots/Screenshot_20260110-211142.Trainee Manager Pro.png" width="250" /> |
 
 </div>
 
